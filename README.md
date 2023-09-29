@@ -1,3 +1,20 @@
+# Test New LLMs (CodeLlama, Llama2, etc.)
+
+test other LLMs (codellama, wizardcoder, etc.) with it, I just wrote a [1-click proxy](https://github.com/BerriAI/litellm#openai-proxy-server) to translate openai calls to huggingface, anthropic, togetherai, etc. api calls.
+
+**code**
+```
+$ pip install litellm
+
+$ litellm --model huggingface/bigcode/starcoder
+
+#INFO:     Uvicorn running on http://0.0.0.0:8000
+
+$ aider --openai-api-base http://0.0.0.0:8000
+```
+
+I'd love to know if this solves a problem for you
+
 # aider is GPT powered coding in your terminal
 
 `aider` is a command-line chat tool that allows you to write and edit
@@ -165,6 +182,7 @@ This minimizes your use of the context window, as well as costs.
 
 ## Kind words from users
 
+* The best AI coding assistant so far." -- [Matthew Berman](https://www.youtube.com/watch?v=df8afeb1FY8)
 * "Aider ... has easily quadrupled my coding productivity." -- [SOLAR_FIELDS](https://news.ycombinator.com/item?id=36212100)
 * "What an amazing tool. It's incredible." -- [valyagolev](https://github.com/paul-gauthier/aider/issues/6#issue-1722897858)
 * "It was WAY faster than I would be getting off the ground and making the first few working versions." -- [Daniel Feldman](https://twitter.com/d_feldman/status/1662295077387923456)
